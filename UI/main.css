@@ -138,9 +138,8 @@ footer{
 }
 
 nav .search{
-    margin:30px 10px 0px 0px;
-    padding:10px 20px 5px 20px;
-    float:right;
+    padding: 20px;    
+    float: right;
 }
  
 .submit a{
@@ -155,6 +154,11 @@ nav .search{
 
 #post .vote{
     flex: 1; 
+}
+
+nav .search{
+    float: none;
+    padding: 0px 20px;
 }
   
 
