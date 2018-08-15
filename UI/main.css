@@ -81,15 +81,13 @@ header .current a{
     text-align: center;
 } 
 #create.right form{
-    margin: 30px 20px;
-}    
+    margin: 0px 65px;
+} 
 
 input{
     display: block;  
     padding: 10px 40px;
     margin: 10px 0px;
-    border: none;
-    font-weight: bold;
     font-size: 15px;
 }
 button{
@@ -122,47 +120,90 @@ footer{
     color: black;
 }
 
-.main {
+#main {
     font-size: 15px;
 }
 
-.main h1 {
+#main h1 {
     text-align: center;
 }
 
-.main h2{
+#main h2{
     text-align: center;
     font-style: italic;
     font-weight: lighter;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-nav .search{
-    padding: 20px;    
-    float: right;
+#main a {
+    text-decoration:none;
 }
- 
-.submit a{
+
+#login {
+    margin:0 auto;
+}
+
+#login h1, #login p{
+    text-align: center;
+}
+
+#login form{
+    margin:10px 0px 10px 40px;
+}
+#login a{
+    text-decoration: none;
+}
+
+#top{
+    padding:30px;
+    margin:0 auto;
+    height:20px;
+    background-color: skyblue;
+}
+
+#top p{
+    float:left;
+    margin: 0px 20px 5px;
+}
+
+#top a{
+    float: right;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+#bottom {
+    padding: 15px 0px 0px 5px;
+}
+
+#bottom form textarea{
+    padding: 20px 10px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#answer {
+    width:100%;
+    display:inline-block;
+}
+
+#answer textarea{
+    padding: 20px 10px;
+}
+
+#post a{
     text-decoration: none;
     color: black;
 }
-#post{
-    width:100%;
-    display: flex;
-    flex-wrap:wrap;
-  }
 
-#post .vote{
-    flex: 1; 
+.vote a{
+    color: black;
 }
 
-nav .search{
-    float: none;
-    padding: 0px 20px;
-}
-  
-
-@media only screen and (max-width:906px){
+@media only screen and (max-width:1062px){
 
     header{
         padding: 0px 0px;
@@ -180,7 +221,7 @@ nav .search{
     }
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:865px){
     .content{
         flex-direction: column;
     }
@@ -191,4 +232,21 @@ nav .search{
         background-color: lightgrey;
     }
 } 
-/* Minimum screen size is 538px */
+
+@media only screen and (max-width:650px){
+    #top{
+        padding:0px 0px;
+        height:50px;
+        text-align:center;
+    }
+
+    #top p{
+        margin:0px;
+        float:none;
+    }
+    #top a{
+        float:none;
+        padding-right: 2px;
+    }
+}
+/* Minimum screen size is 521px */
