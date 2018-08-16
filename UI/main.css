@@ -1,0 +1,252 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+ font: 18px/1.5 arial, Helvetica, sans-serif;
+ padding: 0;
+ margin: 0; 
+ background-color: whitesmoke;  
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    color: blue;
+}
+
+header{
+background: #009688; 
+color: white;
+min-height: 80px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header a:hover{
+    color:brown;
+    font-weight: bold;
+}
+
+header ul{
+    margin: 30px 0px ;
+}
+
+header li{
+    display: inline;
+    padding: 10px;
+}
+
+header #brand{
+    float: left;
+    padding: 0px 20px;
+}
+
+header nav{
+    float: right;
+}
+
+header .current a{
+    color: red;
+    font-weight: bold;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+}
+
+#showcase.left{
+    flex:1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#create.right{
+    flex: 2;
+}
+
+#create.right h1{
+    text-align: center;
+} 
+#create.right form{
+    margin: 0px 65px;
+} 
+
+input{
+    display: block;  
+    padding: 10px 40px;
+    margin: 10px 0px;
+    font-size: 15px;
+}
+button{
+    padding: 10px 40px;
+    margin: 10px 0px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    background-color:limegreen; 
+}
+
+button:hover{
+    background-color: lime;
+
+}
+
+.right p{
+    font-size: 10px;
+}
+
+.right p a{
+text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    padding: 0px 20px;
+    margin-top: 20px;
+    background-color: #009688;
+    color: black;
+}
+
+#main {
+    font-size: 15px;
+}
+
+#main h1 {
+    text-align: center;
+}
+
+#main h2{
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#main a {
+    text-decoration:none;
+}
+
+#login {
+    margin:0 auto;
+}
+
+#login h1, #login p{
+    text-align: center;
+}
+
+#login form{
+    margin:10px 0px 10px 40px;
+}
+#login a{
+    text-decoration: none;
+}
+
+#top{
+    padding:30px;
+    margin:0 auto;
+    height:20px;
+    background-color: skyblue;
+}
+
+#top p{
+    float:left;
+    margin: 0px 20px 5px;
+}
+
+#top a{
+    float: right;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+#bottom {
+    padding: 15px 0px 0px 5px;
+}
+
+#bottom form textarea{
+    padding: 20px 10px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#answer {
+    width:100%;
+    display:inline-block;
+}
+
+#answer textarea{
+    padding: 20px 10px;
+}
+
+#post a{
+    text-decoration: none;
+    color: black;
+}
+
+.vote a{
+    color: black;
+}
+
+@media only screen and (max-width:1062px){
+
+    header{
+        padding: 0px 0px;
+    }
+
+    header ul{
+        padding: 0px;
+        margin: 0px 0px;
+    }
+
+    header #brand, header nav, header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:865px){
+    .content{
+        flex-direction: column;
+    }
+    #showcase.left{
+        background-color: lightgrey;
+    }
+    #create.right{
+        background-color: lightgrey;
+    }
+} 
+
+@media only screen and (max-width:650px){
+    #top{
+        padding:0px 0px;
+        height:50px;
+        text-align:center;
+    }
+
+    #top p{
+        margin:0px;
+        float:none;
+    }
+    #top a{
+        float:none;
+        padding-right: 2px;
+    }
+}
+/* Minimum screen size is 521px */
