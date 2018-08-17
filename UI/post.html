@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>StackOverflow-lite | post</title>
+        <link rel="stylesheet" href="main.css"  type="text/css" >
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div id="brand">
+                    <h1>StackOverFlow-lite</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="mypage.html">profile</a></li>
+                        <li class="current"><a href="post.html">post</a></li>
+                        <li><a href="answer.html">answer</a></li>
+                        <li><a href="index.html">sign out</a></li>
+                    </ul>
+                </nav> 
+            </header>
+            <nav id="top">
+                <p> <a href="#">Ask a Question?</a></p>
+                <a href="#">Delete</a>
+                <a href="post.html">Edit |</a>
+                <a href="mypage.html">View |</a>
+            </nav>          
+            <section id="bottom">
+                <form>
+                    <div class="flex">
+                        <label for="post">Post a question:</label>
+                        <textarea id="post" name="post" cols="100" rows="10">How do you write HTML code for hidden values?</textarea>
+                    </div>
+                    <button type="submit">Post</button>
+                    <input type="hidden" id="postId" name="postId" value="#">
+                </form>
+            </section>
+            <footer>
+                <p>StackOverFlow-lite, Copyright &copy;2018</p>
+            </footer>
+        </div>
+    </body>
+</html>
