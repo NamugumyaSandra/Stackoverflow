@@ -19,6 +19,7 @@ body{
 
 a {
     color: blue;
+    text-decoration: none;
 }
 
 header{
@@ -97,6 +98,10 @@ button{
     font-weight: bold;
     font-size: 15px;
     background-color:limegreen; 
+}
+
+button a{
+    color: black;
 }
 
 button:hover{
